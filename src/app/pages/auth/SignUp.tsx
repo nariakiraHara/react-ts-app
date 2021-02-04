@@ -9,8 +9,6 @@ const page: React.FC = () => {
     firebase.auth()
       .signInWithPopup(provider)
       .then((result) => {
-        const credential = result.credential
-        const user = result.user
         console.log('login is success')
       }).catch((error) => {
         const errorCode = error.code
