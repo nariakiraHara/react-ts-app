@@ -18,6 +18,7 @@ const page: React.FC = () => {
   }
   return (
     <>
+      <title>ログイン</title>
       <div className="p-signUp">
         <input type="eamil" className="p-signUp__email"/>
         <input type="password" className="p-signUp__password"/>

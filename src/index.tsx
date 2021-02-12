@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import Router from './app/pages/Router';
+import Header from './app/components/Header'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div className="base-headerArea">
+      <Header />
+    </div>
     <Router />
   </React.StrictMode>,
   document.getElementById('root')
