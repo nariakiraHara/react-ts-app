@@ -3,6 +3,8 @@ import firebase from 'config/firebase'
 import Header from 'app/components/Header'
 import Router from 'app/pages/Router'
 
+import './App.scss'
+
 const Page: React.FC = () => {
   let isLogin = false
   useEffect(() => {
@@ -12,10 +14,12 @@ const Page: React.FC = () => {
   })
   return (
     <>
-      <div className="p-app__headerArea">
-        <Header isLogin={isLogin} />
+      <div className="p-app">
+        <div className="p-app__headerArea">
+          <Header isLogin={isLogin} />
+        </div>
+        <Router />
       </div>
-      <Router />
     </>
   )
 }

@@ -23,7 +23,7 @@ const Header: FC<Props> = ({ isLogin }) => {
           </div>
         ) : (
           <div className="header__login">
-            <a href="/login" className="header__loginLink"><img src="/login.svg" alt="ログインする" className="header__loginIcon"/></a>
+            <a href="/login" className="header__loginLink"><img src="/login.jpeg" alt="ログインする" className="header__loginIcon"/></a>
           </div>
         )}
       </div>

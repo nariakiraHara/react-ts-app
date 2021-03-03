@@ -3,6 +3,8 @@ to: "<%= componentType === 'page' ? `src/app/pages/${pageDir}/${componentName}.t
 ---
 
 import React { useEffect } from 'react'
+import { SUFFIX_OF_HEAD_TITLE } from 'lib/constants'
+import { Main, Wrapper } from 'app/components/Layout'
 import './<%= componentName %>.scss'
 
 /**
@@ -18,6 +20,11 @@ const Page: React.FC = () => {
   })
   return (
     <>
+      <Wrapper>
+        <Main>
+          <div>page</div>
+        </Main>
+      </Wrapper>
     </>
   )
 }

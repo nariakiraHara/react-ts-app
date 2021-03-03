@@ -1,4 +1,5 @@
 import React, { FC, useEffect } from 'react'
+import { Main, Wrapper } from 'app/components/Layout'
 import { SUFFIX_OF_HEAD_TITLE } from 'lib/constants'
 
 const Home: FC = () => {
@@ -6,7 +7,13 @@ const Home: FC = () => {
     document.title = `トップページ${SUFFIX_OF_HEAD_TITLE}`
   })
   return (
-  <div className="Home__contents">トップページです</div>
+  <>
+    <Wrapper>
+      <Main>
+        <div className="p-home">トップページです</div>
+      </Main>
+    </Wrapper>
+  </>
 )}
 
 export default Home
