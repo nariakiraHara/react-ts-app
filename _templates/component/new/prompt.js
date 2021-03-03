@@ -30,7 +30,8 @@ module.exports = {
             message: 'どのディレクトリに作る？',
             choices: [
               'auth',
-              'blog'
+              'blog',
+              'common'
             ]
           }
         ))

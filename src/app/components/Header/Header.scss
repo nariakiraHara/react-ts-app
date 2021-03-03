@@ -1,5 +1,27 @@
-@import 'src/app/scss/import/assets';
+// @import 'src/app/scss/import/assets';
 
 .header {
-  // スタイルを書いてください
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-bottom: 1px #666666 solid;
+  &__icon {
+    padding-top: 6px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__iconImage {
+    height: 36px;
+    width: 164px;
+  }
+
+  &__login {
+    margin-left: auto;
+  }
+
+  &__loginIcon {
+    height: 48px;
+    width: 48px;
+  }
 }

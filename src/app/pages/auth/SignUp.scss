@@ -1,17 +1,19 @@
 .p- {
   &signUp {
+    text-align: center;
+
+    &__contents {
+      padding: 40px 0 60px 0;
+    }
+
+    &__label {
+      padding: 10px 0 3px 0;
+    }
 
     &__email {
-      display: block;
     }
 
     &__password {
-      display: block;
     }
-
-    &__gmail {
-      display: block;
-    }
-
   }
 }
