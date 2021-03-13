@@ -6,7 +6,7 @@ import SignUp from 'app/pages/auth/SignUp'
 
 interface Props {}
 
-const RouteBase: FC<Props> = ({ children }) => {
+const RouteBase: FC<Props> = () => {
   return (
     <Router>
       <Route path="/" component={Home} exact />

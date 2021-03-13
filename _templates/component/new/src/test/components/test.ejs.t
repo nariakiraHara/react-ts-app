@@ -1,5 +1,5 @@
 ---
-to: "<%= componentType === 'component' ? `test/components/${componentName}/${componentName}.test.tsx` : null %>"
+to: "<%= componentType === 'component' ? `src/tests/components/${componentName}/${componentName}.test.tsx` : null %>"
 ---
 import renderer from 'react-test-renderer'
 import <%= componentName %> from 'app/components/<%= componentName %>'
