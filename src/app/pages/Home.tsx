@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react'
+import { FC, useEffect } from 'react'
 import { Main, Wrapper } from 'app/components/Layout'
 import { SUFFIX_OF_HEAD_TITLE } from 'lib/constants'
 
@@ -14,6 +14,7 @@ const Home: FC = () => {
       </Main>
     </Wrapper>
   </>
-)}
+  )
+}
 
 export default Home
