@@ -36,6 +36,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 2,
     '@typescript-eslint/no-useless-constructor': 2,
     'simple-import-sort/sort': 0,
-    'jsdoc/newline-after-description': 1
+    'jsdoc/newline-after-description': 1,
+    'multiline-ternary': 0
   }
 }
