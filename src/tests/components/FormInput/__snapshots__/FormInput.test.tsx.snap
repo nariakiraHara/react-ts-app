@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput 正常系 type=email 1`] = `
+<input
+  className="formInput"
+  type="email"
+/>
+`;
+
+exports[`FormInput 正常系 type=password 1`] = `
+<input
+  className="formInput"
+  type="password"
+/>
+`;
+
+exports[`FormInput 正常系 type=text 1`] = `
+<input
+  className="formInput"
+  type="text"
+/>
+`;
