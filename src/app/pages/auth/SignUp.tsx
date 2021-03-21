@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { SUFFIX_OF_HEAD_TITLE } from 'lib/constants'
-import firebase from 'config/firebase' 
+import firebase from 'config/firebase'
 import { Main, Wrapper } from 'app/components/Layout'
 import CardSimple from 'app/containers/common/CardSimple'
 import './SignUp.scss'
@@ -14,12 +14,10 @@ const Page: React.FC = () => {
     const provider = new firebase.auth.GoogleAuthProvider()
     firebase.auth()
       .signInWithPopup(provider)
-      .then((result) => {
-        console.log('login is success')
+      .then((user) => {
+        window.console.log(user)
       }).catch((error) => {
-        const errorCode = error.code
-        const errorMessage = error.message
-        console.log(`errorCode: ${errorCode} | message: ${errorMessage}`)
+        window.console.log(error)
       })
   }
   return (

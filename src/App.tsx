@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import firebase from 'config/firebase'
 import Header from 'app/components/Header'
 import Router from 'app/pages/Router'
@@ -6,12 +6,12 @@ import Router from 'app/pages/Router'
 import './App.scss'
 
 const Page: React.FC = () => {
-  let isLogin = false
+  const [isLogin, setLogin] = useState(false)
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
-      isLogin = !!user
+      setLogin(!!user)
     })
-  })
+  }, [isLogin])
   return (
     <>
       <div className="p-app">
