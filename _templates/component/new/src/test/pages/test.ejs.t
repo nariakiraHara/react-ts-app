@@ -1,5 +1,5 @@
 ---
-to: "<%= componentType === 'page' ? `test/pages/${pageDir}/${componentName}.test.tsx` : null %>"
+to: "<%= componentType === 'page' ? `src/tests/pages/${pageDir}/${componentName}.test.tsx` : null %>"
 ---
 import renderer from 'react-test-renderer'
 import Page from 'app/pages/<%= pageDir ? pageDir + '/' : '' %><%= componentName %>'

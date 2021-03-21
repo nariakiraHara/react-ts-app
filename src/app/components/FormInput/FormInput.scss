@@ -1,0 +1,11 @@
+// @import 'src/app/scss/import/assets';
+
+.formInput {
+  // スタイルを書いてください
+  width: 70%;
+  padding: 10px 15px; /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 6px; /*ボックス角の丸み*/
+  border: 2px solid #ddd; /*枠線*/
+  box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+}
