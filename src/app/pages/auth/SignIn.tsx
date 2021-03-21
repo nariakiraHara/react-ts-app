@@ -1,10 +1,8 @@
-import React  from 'react'
 import CardSimple from 'app/containers/common/CardSimple'
 import firebase from 'config/firebase'
 import FormInput from 'app/components/FormInput'
 import getQueryParams from 'lib/getQueryParams'
 import { Wrapper, Main } from 'app/components/Layout'
-
 import './SignIn.scss'
 
 const login: React.FC = () => {
@@ -18,7 +16,7 @@ const login: React.FC = () => {
       }).catch((error) => {
         const errorCode = error.code
         const errorMessage = error.message
-        console.log(`errorCode: ${errorCode} | message: ${errorMessage}`)
+        window.console.log(`errorCode: ${errorCode} | message: ${errorMessage}`)
       })
   }
   return (
